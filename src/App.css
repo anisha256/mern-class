@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+
 }
 
 .App-logo {
@@ -16,12 +18,13 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: none;
+  flex-direction: colun;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-style: comfortaa;
 }
 
 .App-link {
@@ -35,4 +38,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+.student-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #b2bcd1;
+  /* min-height: 100vh; */
+  width: 80%;
+  margin: 0 auto ;
+}
+.students{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.students .student-name .input-container .name-input{
+flex-basis: 50%;
+}
+.students .student-gender .input-container .gender-input{
+flex-basis: 20%;
+}
+.students .student-age .input-container .age-input{
+  flex-basis: 10%;
+ }
+.students .student-name span{
+  font-size: 20px;
+  color: rgb(151, 113, 56);
+}
+.students .student-gender span{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(92, 75, 49);
+}
+.students .student-age span{
+  font-size: 20px;
+  color: rgb(151, 113, 56);
+}
+.input-container input{
+  padding: 10px;
+  margin: 10px;
+  line-height: 20px;
+  font-size: 20px;
+ 
+
+}
+.input-container{
+  width: 80%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
 }
